@@ -1,0 +1,30 @@
+$bg-color: #333;
+$text-color: #fff;
+
+.jp_tooltip-container {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.jp_tooltip-trigger {
+  display: inline-block;
+}
+
+.jp_tooltip-text {
+  position: absolute;
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 5px 5px;
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+  font-size: 11px;
+}
+
+.jp_tooltip-trigger:hover + .tooltip-text {
+  display: block;
+}
