@@ -29,6 +29,7 @@ const WindowMd = forwardRef(
     const handleShow = () => {
       setIsVisible(true);
     };
+    
     const handleClose = () => {
       setIsVisible(false);
     };
